@@ -12,4 +12,4 @@ if [ "$THRESHOLD" -gt "$USAGE" ]; then
 else
 	echo "$HOSTANEM | $DATE | info: disk usage is normal $USAGE" >> $LOGFILE
 fi
-
+#comment 2
