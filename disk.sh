@@ -5,6 +5,8 @@ HOSTNAME=$(hostname)
 DATE=$(date '+%Y-%m-%d_%H:%M:%S')
 LOGFILE="/var/log/disk.log"
 
+#comment added
+
 USAGE=$(df -h / | awk 'NR==2 {print$5}' | sed 's/%//')
 
 if [ "$THRESHOLD" -gt "$USAGE" ]; then
